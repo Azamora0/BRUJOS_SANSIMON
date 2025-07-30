@@ -395,3 +395,54 @@ html {
   margin-bottom: 20px;
   line-height: 1.6;
 }
+
+/* HEADER RESPONSIVO */
+.logo-header {
+  height: 60px;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
+
+nav.nav-links {
+  display: flex;
+  gap: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  nav.nav-links {
+    width: 100%;
+    flex-direction: column;
+    display: none;
+    background-color: #000;
+    padding-top: 10px;
+  }
+
+  #menu-toggle:checked + .menu-icon + nav.nav-links {
+    display: flex;
+  }
+
+  nav.nav-links a {
+    padding: 10px 0;
+    text-align: center;
+    border-top: 1px solid #333;
+  }
+}
+
