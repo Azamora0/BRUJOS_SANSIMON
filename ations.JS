@@ -1,4 +1,4 @@
-let current = 0;
+let currentIndex = 0;
 const slides = document.querySelectorAll(".slide");
 const dots = document.querySelectorAll(".dot");
 
@@ -7,16 +7,15 @@ function showSlide(index) {
     slide.classList.toggle("active", i === index);
     dots[i].classList.toggle("active", i === index);
   });
-  current = index;
 }
 
-function nextSlide() {
-  current = (current + 1) % slides.length;
-  showSlide(current);
+function currentSlide(index) {
+  currentIndex = index;
+  showSlide(currentIndex);
 }
 
-function currentSlide(n) {
-  showSlide(n);
-}
-
-setInterval(nextSlide, 3000); // Cambia cada 3 segundos
+// Opcional: auto-cambio
+setInterval(() => {
+  currentIndex = (currentIndex + 1) % slides.length;
+  showSlide(currentIndex);
+}, 3000);
