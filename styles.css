@@ -235,7 +235,7 @@ header {
   flex-direction: column;
   align-items: center;
   gap: 20px;
-  max-width: 600px;
+  max-width: 500px;
   margin: auto;
 }
 
@@ -243,7 +243,7 @@ header {
 .formulario-contacto input[type="email"],
 .formulario-contacto input[type="tel"],
 .formulario-contacto textarea {
-  background-color: #eef2ff;
+  background-color: white;
   color: black;
   border: none;
   border-radius: 5px;
@@ -254,48 +254,53 @@ header {
 
 .formulario-contacto label {
   font-weight: bold;
-  margin-top: 10px;
-  text-align: center;
-  width: 100%;
-}
-
-.opciones {
+  text-align: left;
   width: 100%;
   max-width: 400px;
-  margin: 10px auto;
+}
+
+
+.opciones {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
   background-color: white;
   color: black;
   padding: 15px;
   border-radius: 5px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+  width: 100%;
+  max-width: 400px;
 }
 
 .fila-opcion {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  gap: 10px;
   font-size: 14px;
-  padding: 5px 10px;
-  width: 100%;
   cursor: pointer;
 }
 
-.texto-opcion {
-  text-align: left;
-  flex-grow: 1;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
 .fila-opcion input {
-  width: 20px;
-  height: 20px;
+  width: 18px;
+  height: 18px;
   accent-color: #e60073;
 }
 
+.boton-rojo {
+  background-color: #e60000;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.boton-rojo:hover {
+  background-color: #cc0000;
+}
 /* ------------------------------ */
 /*             FOOTER            */
 /* ------------------------------ */
