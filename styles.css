@@ -261,6 +261,8 @@ header {
 
 .opciones {
   width: 100%;
+  max-width: 400px;
+  margin: 10px auto;
   background-color: white;
   color: black;
   padding: 15px;
@@ -268,25 +270,27 @@ header {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  max-width: 400px;
-  margin: 10px auto;
 }
 
 .fila-opcion {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 5px 10px;
   font-size: 14px;
+  padding: 5px 10px;
+  width: 100%;
+  cursor: pointer;
 }
 
 .texto-opcion {
-  flex-grow: 1;
   text-align: left;
+  flex-grow: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
-input[type="radio"],
-input[type="checkbox"] {
+.fila-opcion input {
   width: 20px;
   height: 20px;
   accent-color: #e60073;
