@@ -435,6 +435,42 @@ nav.nav-links {
     padding-top: 10px;
   }
 
+/* Ocultar por defecto */
+#menu-toggle,
+.menu-icon {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  /* Mostrar solo en celulares */
+  #menu-toggle {
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 30px;
+    height: 30px;
+    opacity: 0;
+    z-index: 3;
+  }
+
+  .menu-icon {
+    display: block;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    z-index: 2;
+    margin-right: 20px;
+  }
+
+  nav.nav-links {
+    width: 100%;
+    flex-direction: column;
+    display: none;
+    background-color: #000;
+    padding-top: 10px;
+  }
+
   #menu-toggle:checked + .menu-icon + nav.nav-links {
     display: flex;
   }
@@ -445,4 +481,5 @@ nav.nav-links {
     border-top: 1px solid #333;
   }
 }
+
 
