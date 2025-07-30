@@ -548,3 +548,50 @@ header {
   }
 }
 
+  /* --- CORRECCIÓN DEL FORMULARIO --- */
+
+.formulario-contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  max-width: 600px;
+  margin: auto;
+}
+
+.formulario-contacto label {
+  font-weight: bold;
+  margin-top: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+.opciones {
+  width: 100%;
+  background-color: white;
+  color: black;
+  padding: 15px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.fila-opcion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
+  font-size: 14px;
+}
+
+.texto-opcion {
+  flex-grow: 1;
+  text-align: left;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  accent-color: #e60073; /* color rosado personalizado */
+}
+
