@@ -1,22 +1,11 @@
 <!DOCTYPE html>
 <html lang="es">
-<header>
-  <img src="IMAGENES/LOGO2.png" alt="San Simón Logo" class="logo">
-
-  <button class="menu-toggle" onclick="toggleMenu()">☰</button>
-
-  <nav id="menu" class="nav-links">
-    <a href="#servicios">Servicios</a>
-    <a href="#contacto">Contáctanos</a>
-    <a href="nosotros.html">Acerca de nosotros</a>
-  </nav>
-</header>
-<script>
-  function toggleMenu() {
-    const menu = document.getElementById("menu");
-    menu.classList.toggle("active");
-  }
-</script>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SAN SIMON - Amarres de Amor</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
 <body>
   <header>
     <img src="IMAGENES/LOGO2.png" alt="San Simon Logo">
@@ -89,7 +78,7 @@
   <section class="contacto" id="contacto">
     <h3>Contáctenos</h3>
      <hr class="linea-blanca" />
-    <form action="https://formsubmit.co/alejandraramirezc1621@gmail.com" method="POST" class="formulario-contacto">
+    <form action="https://formsubmit.co/TUCORREO@ejemplo.com" method="POST" class="formulario-contacto">
   <input type="text" name="nombre" placeholder="Nombre" required>
   <input type="email" name="correo" placeholder="Correo electrónico" required>
   <input type="tel" name="telefono" placeholder="Teléfono" required>
@@ -124,10 +113,12 @@
   </label>
 </div>
 
- <!-- Configuración oculta para FormSubmit -->
-<input type="hidden" name="_captcha" value="false">
-<input type="hidden" name="_next" value="https://Azamora0.github.io/BRUJOS_SANSIMON/gracias.html">
 
+
+
+  <!-- FormSubmit ocultos -->
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_next" value="https://tucuenta.github.io/tu-repo/gracias.html">
 
   <button type="submit" class="boton-rojo">Enviar</button>
 </form>
