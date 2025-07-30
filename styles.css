@@ -441,3 +441,29 @@ html {
   line-height: 1.6;
 }
 
+/* ------------------------------ */
+/*       FUNCIONALIDAD SLIDER    */
+/* ------------------------------ */
+
+.slider {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-height: 600px;
+}
+
+.slide {
+  display: none;
+  width: 100%;
+  height: auto;
+}
+
+.slide.active {
+  display: block;
+}
+
+.slider img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
