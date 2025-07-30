@@ -85,51 +85,44 @@
   <section class="contacto" id="contacto">
     <h3>Contáctenos</h3>
      <hr class="linea-blanca" />
-  <form action="https://formspree.io/f/xnnzzdld" method="POST"> 
+  <form action="https://formspree.io/f/xnnzzdld" method="POST" class="formulario-contacto"> 
   <input type="text" name="nombre" placeholder="Nombre" required>
   <input type="email" name="correo" placeholder="Correo electrónico" required>
   <input type="tel" name="telefono" placeholder="Teléfono" required>
 
-<label>¿Con quién deseas trabajar?</label>
-<div class="opciones">
-  <label class="fila-opcion">
-    <span class="texto-opcion">Brujo</span>
-    <input type="radio" name="especialista" value="Brujo" required>
-  </label>
-  <label class="fila-opcion">
-    <span class="texto-opcion">Bruja</span>
-    <input type="radio" name="especialista" value="Bruja" required>
-  </label>
-</div>
+  <label for="especialista">¿Con quién deseas trabajar?</label>
+  <div class="opciones">
+    <label class="fila-opcion">
+      <input type="radio" name="especialista" value="Brujo" required>
+      <span class="texto-opcion">Brujo</span>
+    </label>
+    <label class="fila-opcion">
+      <input type="radio" name="especialista" value="Bruja" required>
+      <span class="texto-opcion">Bruja</span>
+    </label>
+  </div>
 
+  <label>¿Qué servicio deseas?</label>
+  <div class="opciones">
+    <label class="fila-opcion">
+      <input type="checkbox" name="servicio[]" value="Amarres de amor">
+      <span class="texto-opcion">Amarres de amor</span>
+    </label>
 
-<label>¿Qué servicio deseas?</label>
-<div class="opciones">
-  <label class="fila-opcion">
-    <span class="texto-opcion">Amarres de amor</span>
-    <input type="checkbox" name="servicio[]" value="Amarres de amor">
-  </label>
+    <label class="fila-opcion">
+      <input type="checkbox" name="servicio[]" value="Retorno de pareja">
+      <span class="texto-opcion">Retorno de pareja</span>
+    </label>
 
-  <label class="fila-opcion">
-    <span class="texto-opcion">Retorno de pareja</span>
-    <input type="checkbox" name="servicio[]" value="Retorno de pareja">
-  </label>
-
-  <label class="fila-opcion">
-    <span class="texto-opcion">Amarres del mismo sexo</span>
-    <input type="checkbox" name="servicio[]" value="Amarres del mismo sexo">
-  </label>
-</div>
-
-
-
-
-  <!-- FormSubmit ocultos -->
-  <input type="hidden" name="_captcha" value="false">
-  <input type="hidden" name="_next" value="https://azamora0.github.io/BRUJOS_SANSIMON/gracias.html">
+    <label class="fila-opcion">
+      <input type="checkbox" name="servicio[]" value="Amarres del mismo sexo">
+      <span class="texto-opcion">Amarres del mismo sexo</span>
+    </label>
+  </div>
 
   <button type="submit" class="boton-rojo">Enviar</button>
 </form>
+
 
   </section>
 
