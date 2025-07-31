@@ -502,3 +502,33 @@ html {
   color: #ccc;
   font-style: italic;
 }
+
+.contacto-redes {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+  align-items: center;
+}
+
+.icono-red {
+  display: flex;
+  align-items: center;
+  background-color: #222;
+  padding: 10px 20px;
+  border-radius: 8px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.icono-red:hover {
+  background-color: #333;
+}
+
+.icono-red img {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
