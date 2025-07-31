@@ -486,12 +486,18 @@ html {
 }
 
 .testimonio img.captura {
-  width: 50%;
-  max-height: 50%;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 250px; /* ajusta el valor según lo que te guste */
   object-fit: contain;
   border-radius: 10px;
   margin-bottom: 15px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
+
 
 
 .testimonio audio {
