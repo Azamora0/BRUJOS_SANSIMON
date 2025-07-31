@@ -7,15 +7,24 @@
 </head>
 <body>
 
-  <header>
-    <img src="IMAGENES/LOGO2.png" alt="San Simón Logo">
-    <nav>
-      <a href="index.html">Inicio</a>
-      <a href="index.html#servicios">Servicios</a>
-      <a href="index.html#contacto">Contáctanos</a>
-      <a href="nosotros.html">Acerca de Nosotros</a>
-    </nav>
-  </header>
+ <header>
+  <img src="IMAGENES/LOGO2.png" alt="San Simon Logo" class="logo-header">
+
+  <!-- Ícono de menú solo visible en móviles -->
+  <input type="checkbox" id="menu-toggle">
+  <label for="menu-toggle" class="menu-icon">&#9776;</label>
+
+  <!-- Menú de navegación con ícono de WhatsApp -->
+  <nav class="nav-links">
+    <a href="index.html#servicios">Servicios</a>
+    <a href="index.html#contacto">Contáctanos</a>
+    <a href="nosotros.html">Acerca de nosotros</a>
+    <a href="https://wa.me/50236245733" target="_blank">
+      <img src="IMAGENES/WHA.jpg" alt="WhatsApp" style="height: 24px; vertical-align: middle;">
+    </a>
+  </nav>
+</header>
+
 
   <section class="nosotros">
     <h1>Conoce la Fundación de Brujería San Simón</h1>
