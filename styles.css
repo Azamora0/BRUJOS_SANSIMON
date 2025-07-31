@@ -487,11 +487,12 @@ html {
 
 .testimonio img.captura {
   width: 100%;
-  max-height: 300px;
-  object-fit: cover;
+  max-height: 100%;
+  object-fit: contain;
   border-radius: 10px;
   margin-bottom: 15px;
 }
+
 
 .testimonio audio {
   width: 100%;
