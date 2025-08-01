@@ -489,7 +489,7 @@ html {
   width: auto;
   max-width: 100%;
   height: auto;
-  max-height: 350px; /* ajusta el valor según lo que te guste */
+  max-height: 500px; /* ajusta el valor según lo que te guste */
   object-fit: contain;
   border-radius: 10px;
   margin-bottom: 15px;
