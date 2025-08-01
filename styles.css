@@ -547,3 +547,15 @@ html {
   font-style: italic;
 }
 
+.testimonios-contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.testimonios .testimonio {
+  flex: 1 1 300px;
+  max-width: 320px;
+}
+
