@@ -78,7 +78,7 @@ header {
   position: relative;
   overflow: hidden;
   width: 100%;
-  height: 400px; /* altura fija para todas las imágenes */
+  height: 400px; /* puedes ajustar esta altura */
   background-color: black;
 }
 
@@ -99,8 +99,10 @@ header {
 .slide img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* asegura mismo tamaño visual aunque las imágenes sean distintas */
+  object-fit: cover; /* esto recorta y centra la imagen uniformemente */
+  object-position: center;
 }
+
 
 
 .slider p {
