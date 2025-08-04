@@ -563,25 +563,33 @@ html {
   position: fixed;
   bottom: 20px;
   left: 20px;
-  z-index: 1000;
+  z-index: 9999;
   display: flex;
   align-items: center;
-  justify-content: center;
-  width: 65px;
-  height: 65px;
-  background-color: transparent;
-  border-radius: 50%;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  gap: 8px;
+  background-color: #25d366;
+  padding: 8px 14px;
+  border-radius: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  text-decoration: none;
   transition: transform 0.3s ease;
 }
 
 .whatsapp-flotante img {
-  width: 100%;
-  height: auto;
+  width: 28px;
+  height: 28px;
   border-radius: 50%;
 }
 
-.whatsapp-flotante:hover {
-  transform: scale(1.1);
+.whatsapp-flotante span {
+  color: white;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
 }
+
+.whatsapp-flotante:hover {
+  transform: scale(1.05);
+}
+
 
