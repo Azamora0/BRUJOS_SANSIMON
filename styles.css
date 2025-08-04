@@ -559,3 +559,24 @@ html {
   max-width: 320px;
 }
 
+.whatsapp-flotante {
+  position: fixed;
+  left: 20px;
+  bottom: 20px;
+  z-index: 999;
+  background-color: #25d366;
+  padding: 10px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-flotante img {
+  width: 40px;
+  height: 40px;
+}
+
+.whatsapp-flotante:hover {
+  transform: scale(1.1);
+}
+
