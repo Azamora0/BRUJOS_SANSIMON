@@ -674,10 +674,13 @@ html {
 
 .imagen-llamada img {
   width: 100%;
-  max-width: 450px;
+  max-width: 350px; /* antes era 450px */
+  height: auto;
   border-radius: 10px;
   box-shadow: 0 0 15px rgba(0,0,0,0.4);
+  object-fit: contain;
 }
+
 
 /* Responsive para celular */
 @media screen and (max-width: 768px) {
