@@ -765,7 +765,7 @@ html {
   object-fit: contain;
 }
 
-  .fortuna-section {
+.fortuna-section {
   background-color: #000;
   padding: 60px 20px;
   color: #ccc;
@@ -773,29 +773,30 @@ html {
 
 .fortuna-contenido {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
   max-width: 1100px;
   margin: auto;
-  gap: 30px;
+  gap: 40px;
 }
 
 .fortuna-imagen {
-  flex: 1 1 40%;
+  flex: 1 1 35%;
   text-align: center;
 }
 
 .fortuna-imagen img {
   width: 100%;
-  max-width: 350px;
+  max-width: 300px;
+  height: auto;
   border-radius: 10px;
   box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
   object-fit: contain;
 }
 
 .fortuna-texto {
-  flex: 1 1 55%;
+  flex: 1 1 60%;
 }
 
 .fortuna-texto h2 {
@@ -831,7 +832,7 @@ html {
   }
 
   .fortuna-imagen img {
-    max-width: 300px;
+    max-width: 250px;
   }
 }
 
